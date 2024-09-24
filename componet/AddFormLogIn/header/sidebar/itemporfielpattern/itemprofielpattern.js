@@ -1,8 +1,9 @@
 import React, { useContext } from "react";
 import { ItemContext } from "../../../../usecontext/usecontext";
 import "./itemprofielpattern.css";
-import Dash from "../../../../buttoncomponent/dash/page";
-import Test from "../../../../buttoncomponent/test/page";
+import Dash from "../../../../../src/app/dash/page";
+import Test from "../../../../../src/app/test/page";
+import Link from "next/link";
 const profileItems = [
   { id: 1, name: "داشبورد", path: "/dash", comp: <Dash /> },
   { id: 2, name: "افزودن اعتبار", path: "/add-credit" },
@@ -16,12 +17,10 @@ const profileItems = [
 
 const Items = () => {
   const { setNameItem } = useContext(ItemContext);
-  const handleButtonClick = (id, name, comp) => {
-    setNameItem({ id, name, comp });
+  const handleButtonClick = (id, name) => {
+    setNameItem({ id, name });
   };
-  // const handleArray = () => {
-  //   setArrayProfileItem(profileItems);
-  // };
+
   return (
     <>
       {profileItems.map((item, index) => (
@@ -33,13 +32,15 @@ const Items = () => {
               : "profile-section-item"
           }
         >
-          <button
-            className="option-item"
-            onClick={() => handleButtonClick(item.id, item.name, item.comp)}
-          >
-            <div>{item.name}</div>
-            <div className="circle"></div>
-          </button>
+          <Link href={item.path} passHref>
+            <button
+              className="option-item"
+              onClick={() => handleButtonClick(item.id, item.name)}
+            >
+              <div>{item.name}</div>
+              <div className="circle"></div>
+            </button>
+          </Link>
         </div>
       ))}
     </>

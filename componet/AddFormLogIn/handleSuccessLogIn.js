@@ -1,11 +1,15 @@
+import React, { useState } from "react";
 import NavarDashbor from "./navbarhandlelogin/navbarhandlelogin";
 import Header from "./header/header";
 import { ItemProvider } from "../usecontext/usecontext";
-const HandleSuccessLogIn = () => (
-  <ItemProvider>
-    <NavarDashbor />
-    <Header />
-  </ItemProvider>
-);
+
+const HandleSuccessLogIn = () => {
+  return (
+    <ItemProvider>
+      <NavarDashbor />
+      <Header />
+    </ItemProvider>
+  );
+};
 
 export default HandleSuccessLogIn;

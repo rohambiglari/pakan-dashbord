@@ -32,6 +32,10 @@ const dashboardItems = [
 const Dashbord = () => {
   return (
     <>
+      <h4 className="h4-header">داشبورد</h4>
+
+      <div className="img-dashbor"></div>
+      <div className="style-dashbord-items"></div>
       {dashboardItems.map((item, index) => (
         <DashboardItem key={index} item={item}>
           {item.happen ? (

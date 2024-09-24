@@ -12,24 +12,7 @@ const Header = () => {
     <div className="header-contaner">
       <div className="header-dashbord">
         <div className="style-headr-left-side">
-          {nameItem.id && <h4 className="h4-header">{nameItem.comp}</h4>}
-          {/* {nameItem === nameItem.name && (
-            <>
-              <h4 className="h4-header">داشبورد</h4>
-
-              <div className="img-dashbor"></div>
-              <div className="style-dashbord-items">
-                <Dashbord />
-              </div>
-            </>
-          )} */}
-          {/* {nameItem &&
-            nameItem.map((item, index) => <div key={index}>{item.id}</div>)} */}
-          {/* {nameItem === arrayProfileItem.name && (
-            <h4 className="h4-header">داشبورد</h4>
-          )} */}
-
-          {/* {items.map((item) => nameItem === item && <h4>{item}</h4>)} */}
+          <Dashbord />
         </div>
         <div className="style-headr-right-side">
           <SideBar />
