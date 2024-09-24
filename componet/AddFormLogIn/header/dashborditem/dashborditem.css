@@ -1,0 +1,148 @@
+.dashbord-item {
+  margin-top: 30px;
+}
+
+.style-situation {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.style-situation > div {
+  display: flex;
+  align-items: center;
+}
+
+.style-situation > div > p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ccc;
+}
+
+.style-situation > h5 {
+  font-size: 25px;
+  font-weight: 900;
+  color: #f59220;
+  margin: 0;
+}
+
+.style-request {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 35px;
+  box-shadow: 0 0 85px 0 rgba(0, 0, 0, 0.05);
+}
+
+.style-request > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 49px;
+  border-bottom: 1px solid #ececec;
+}
+
+.style-request > div > p:last-child {
+  font-size: 20px;
+  font-weight: 500;
+  color: #707070;
+  line-height: 1.55;
+}
+
+.style-request > div > p:first-child {
+  font-size: 20px;
+  font-weight: 500;
+  color: #707070;
+  line-height: 1.55;
+}
+
+.items-request {
+  display: flex;
+  padding: 49px;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.items-request > div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-width: 300px;
+}
+
+.process-products-first {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.process-products-first > p {
+  font-size: 18px;
+  font-weight: 900;
+  color: #ccc;
+}
+
+.setp-line {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: row-reverse;
+}
+
+.setp-line > hr {
+  width: calc(12.5% - 12.5px);
+  height: 2px;
+  background-color: #ccc;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.steper-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  background-color: #ccc;
+}
+
+.steper-circle:hover {
+  background-color: #004594; /* تغییر رنگ پس‌زمینه */
+}
+
+.steper-circle:hover + hr {
+  background-color: #004594; /* تغییر رنگ خط اول */
+}
+
+.steper-circle:hover + hr + hr {
+  background-color: #004594; /* تغییر رنگ خط دوم */
+}
+
+.process-products-secound {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.process-products-secound > p {
+  font-size: 18px;
+  font-weight: 900;
+  color: #ccc;
+}
+
+.wallet-contaner {
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  padding: 20px;
+  padding-right: 34px;
+}

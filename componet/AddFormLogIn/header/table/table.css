@@ -1,0 +1,23 @@
+.table{
+    width: 100%;
+    padding: 0 20px;
+}
+
+.table>div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #707070;
+    font-size: 1rem;
+    font-family: YekanBakh-Medium;
+    margin: 3px 0;
+}
+
+.items-table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 20%;
+    margin: 0 15px;
+}
