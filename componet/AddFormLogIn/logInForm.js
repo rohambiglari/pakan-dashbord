@@ -7,8 +7,8 @@ import Api from "../../componet/api";
 import logInUser from "./serverSidePreventLogIn";
 // import { cookies } from "next/headers";
 import Layout from "../layout/layout";
-import HandleSuccessLogIn from "./handleSuccessLogIn";
-const LogIn = () => {
+import HandleSuccessLogIn from "./handlesuccess/handlesuccess";
+const CheckLogIn = () => {
   const [formData, setFormData] = useState({
     password: "",
     username: "",
@@ -75,7 +75,7 @@ const LogIn = () => {
   );
 
   // return <>{state ? <HandleSuccessLogIn /> : handleLogInForm()}</>;
-  return <>{<HandleSuccessLogIn />}</>;
+  return <>{handleLogInForm()}</>;
 };
 
-export default LogIn;
+export default CheckLogIn;

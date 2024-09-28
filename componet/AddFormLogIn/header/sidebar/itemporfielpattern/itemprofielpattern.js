@@ -23,7 +23,7 @@ const profileItems = [
   { id: 6, name: "آدرس های من", path: "/my-addresses" },
   { id: 7, name: "درخواست ها", path: "/test" },
   { id: 8, name: "گردش حساب", path: "/account-statement" },
-  { id: 9, name: "خروج", path: "/logout" },
+  { id: 9, name: "خروج", path: "/logOut" },
 ];
 
 const Items = () => {

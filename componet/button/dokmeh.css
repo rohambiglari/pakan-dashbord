@@ -1,0 +1,90 @@
+.button-1{
+    border-radius: 4px;
+    border: none;
+    color: white;
+    height: 36px;
+    padding: 7px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button-1 {
+    background-color: #1c39bb; 
+    color: #fff; 
+    border: 1px solid #fff;
+}
+
+
+.button-2{
+    background-color: #fff;
+    border-radius: 4px;
+    border: none;
+    color: #1c39bb;
+    height: 36px;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button-2 a{
+    color: #1c39bb;
+}
+
+.button-22 {
+    background-color: #F00; 
+    color: #fff; 
+    border: 1px solid #fff;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.color{
+    background-color:#1c39bb;
+}
+
+.google-button{
+    margin: 48px 0 20px;
+    border: 0;
+}
+
+.apple-button{
+    margin: 48px 0 20px;
+    margin-left: 32px;
+    border: 0;
+}
+
+.button-send-verification{
+    margin-top: auto;
+    margin-bottom: 0px;
+    width: 88.5%;
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0;
+    text-align: left;
+    height: 33px;
+    cursor: pointer;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center !important;
+    padding: 6px 24px;
+    color: #fff;
+    background: #1c39bb;
+    border: none;
+    border-radius: 5px;
+}
+
+.button-send-verification p{
+    font-size: 21px;
+}
