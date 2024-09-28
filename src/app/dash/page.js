@@ -1,8 +1,15 @@
-"use client";
-import React from "react";
-import "./dash.css";
-const Dash = () => {
-  return <div className="dash">dashbord</div>;
+import Header from "../../../componet/AddFormLogIn/header/header";
+import Dashbord from "../../../componet/AddFormLogIn/header/dashborditem/dashborditem";
+const Home = () => {
+  return (
+    <>
+      <Header>
+        <Dashbord />
+      </Header>
+    </>
+  );
 };
 
-export default Dash;
+export default Home;
+
+// pages/add-credit.js

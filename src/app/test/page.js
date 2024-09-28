@@ -1,8 +1,12 @@
-"use client";
-import React from "react";
-import "./test.css";
-const Test = () => {
-  return <div className="test"> در خواست ها </div>;
+import Header from "../../../componet/AddFormLogIn/header/header";
+const About = () => {
+  return (
+    <>
+      <Header>
+        <h1>درخواست ها</h1>
+      </Header>
+    </>
+  );
 };
 
-export default Test;
+export default About;

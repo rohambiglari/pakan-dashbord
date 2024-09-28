@@ -6,6 +6,7 @@ import Api from "../../componet/api";
 // import Cookie from "js-cookie";
 import logInUser from "./serverSidePreventLogIn";
 // import { cookies } from "next/headers";
+import Layout from "../layout/layout";
 import HandleSuccessLogIn from "./handleSuccessLogIn";
 const LogIn = () => {
   const [formData, setFormData] = useState({
