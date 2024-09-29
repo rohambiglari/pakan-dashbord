@@ -1,25 +1,3 @@
-.button {
-  all: unset; /* حذف تمام استایل‌های پیش‌فرض */
-  display: inline-flex; /* استفاده از flex برای تنظیم دکمه */
-  justify-content: center; /* مرکز چینش محتوا */
-  align-items: center; /* مرکز چینش عمودی */
-  /* فضای داخلی */
-  cursor: pointer; /* تغییر نشانگر ماوس */
-  background-color: transparent; /* رنگ پیش‌فرض پس‌زمینه */
-  border: none; /* حذف حاشیه */
-  transition: background-color 0.3s ease; /* Transition برای پس‌زمینه */
-}
-
-.button:hover {
-  background-color: #e5ecf4; /* رنگ پس‌زمینه در هاور */
-  box-shadow: none; /* جلوگیری از سایه در هاور */
-  transform: none; /* جلوگیری از تغییرات سه‌بعدی */
-}
-
-.button:focus {
-  outline: none; /* حذف outline */
-}
-
 .profile-section-item {
   width: 100%;
   padding: 15px 25px;
@@ -112,4 +90,21 @@
   border-radius: 15px;
   border: 2px solid #707070;
   margin-left: 10px;
+}
+
+@media (max-width: 1167px) {
+  .profile-items {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .profile-section-item {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .profile-section-item a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
