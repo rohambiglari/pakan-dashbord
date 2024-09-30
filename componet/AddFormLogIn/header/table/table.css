@@ -1,4 +1,4 @@
-.table{
+/* .table{
     width: 100%;
     padding: 0 20px;
 }
@@ -20,4 +20,56 @@
     text-align: center;
     width: 20%;
     margin: 0 15px;
+} */
+
+.table {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table-row {
+  display: flex;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-row:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.items-table {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  border-right: 1px solid #ddd;
+}
+
+.items-table:last-child {
+  border-right: none;
+}
+
+@media (max-width: 600px) {
+  .table {
+    margin: 10px;
+  }
+
+  .table-row {
+    flex-direction: column;
+    border-bottom: none;
+    padding: 10px 0;
+  }
+
+  .items-table {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+    text-align: right; /* یا left بسته به نیاز */
+  }
+
+  .items-table:last-child {
+    border-bottom: none;
+  }
 }

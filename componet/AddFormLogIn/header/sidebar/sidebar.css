@@ -191,3 +191,21 @@
     border-radius: 10px;
   }
 }
+
+@media (max-width: 600px) {
+  .profile-items {
+    width: 100%;
+  }
+
+  .contaner-user-profile {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .wallet-section {
+    margin: 10px 0;
+    padding: 10px 9px;
+  }
+}

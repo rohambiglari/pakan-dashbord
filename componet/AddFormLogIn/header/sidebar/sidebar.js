@@ -27,31 +27,33 @@ const SideBar = () => {
 
   return (
     <>
-      <div className="user-profile">
-        {isMobile && (
-          <button className="toggle-logo" onClick={toggleSections}>
-            <div>
-              <div className="rectangle"></div>
-              <div className="rectangle"></div>
-            </div>
-            <div>
-              <div className="rectangle"></div>
-              <div className="rectangle"></div>
-            </div>
-          </button>
-        )}
-        <div className="profile-text">
-          <p>پروفایل کاربری</p>
-        </div>
-        {isMobile && (
-          <div className="active-title">
-            <p>|</p>
-            <p>داشبورد</p>
-            <div>
-              <img src="./icons8-back-24.png" />
-            </div>
+      <div className="contaner-user-profile">
+        <div className="user-profile">
+          {isMobile && (
+            <button className="toggle-logo" onClick={toggleSections}>
+              <div>
+                <div className="rectangle"></div>
+                <div className="rectangle"></div>
+              </div>
+              <div>
+                <div className="rectangle"></div>
+                <div className="rectangle"></div>
+              </div>
+            </button>
+          )}
+          <div className="profile-text">
+            <p>پروفایل کاربری</p>
           </div>
-        )}
+          {isMobile && (
+            <div className="active-title">
+              <p>|</p>
+              <p>داشبورد</p>
+              <div>
+                <img src="./icons8-back-24.png" />
+              </div>
+            </div>
+          )}
+        </div>
       </div>
       <div className="profile-items">
         {(!isMobile || showSections) && (

@@ -23,7 +23,6 @@ const Table = () => {
     </div>
   );
 };
-
 export default Table;
 // {one.map((status, index) => (
 //   <div className="items-table" key={index}>{status}</div>

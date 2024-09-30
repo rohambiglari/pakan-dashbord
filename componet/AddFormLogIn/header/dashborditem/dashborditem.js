@@ -22,7 +22,7 @@ const dashboardItems = [
     imgAlt: "back-icon",
     viewAllText: "مشاهده همه",
     statusHeading: "گردش حساب",
-    requestNumber: "0 ریال",
+    requestNumber: " ریال0",
     requestNumberLabel: "موجودی کیف پول شما",
     happen: false,
     table: ["باقی مانده", "مبلغ تراکنش", "تاریخ", "شماره درخواست", "#"],
@@ -36,23 +36,25 @@ const Dashbord = () => {
 
       <div className="img-dashbor"></div>
       <div className="style-dashbord-items"></div>
-      {dashboardItems.map((item, index) => (
-        <DashboardItem key={index} item={item}>
-          {item.happen ? (
-            <div className="items-request">
-              <Request
-                statuses={item.statuses}
-                steps={item.steps}
-                statusesTow={item.statusesTow}
-              />
-            </div>
-          ) : (
-            <div className="wallet-contaner">
-              <TableTwo />
-            </div>
-          )}
-        </DashboardItem>
-      ))}
+      <div className="dashbord-container">
+        {dashboardItems.map((item, index) => (
+          <DashboardItem key={index} item={item}>
+            {item.happen ? (
+              <div className="items-request">
+                <Request
+                  statuses={item.statuses}
+                  steps={item.steps}
+                  statusesTow={item.statusesTow}
+                />
+              </div>
+            ) : (
+              <div className="wallet-contaner">
+                <TableTwo />
+              </div>
+            )}
+          </DashboardItem>
+        ))}
+      </div>
     </>
   );
 };
