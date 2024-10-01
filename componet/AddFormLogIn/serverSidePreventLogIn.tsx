@@ -2,9 +2,7 @@
 
 import { redirect } from "next/navigation";
 const logInUser = () => {
-  
-    redirect("/");
- 
+  redirect("/");
 };
 
 export default logInUser;

@@ -1,9 +1,10 @@
 // import React, { useContext } from "react";
-import { ItemContext } from "../../../../usecontext/usecontext";
+// import { ItemContext } from "../../../../usecontext/usecontext";
 import "./itemprofielpattern.css";
 import Dash from "../../../../../src/app/dash/page";
 import Test from "../../../../../src/app/test/page";
 import Link from "next/link";
+import React from "react";
 // const profileItems = [
 //   { id: 1, name: "داشبورد", path: "/dash", comp: <Dash /> },
 //   { id: 2, name: "افزودن اعتبار", path: "/add-credit" },
@@ -14,8 +15,13 @@ import Link from "next/link";
 //   { id: 8, name: "گردش حساب", path: "/account-statement" },
 //   { id: 9, name: "خروج", path: "/logout" },
 // ];
+interface ProfileItem {
+  id: number;
+  name: string;
+  path: string;
+}
 
-const profileItems = [
+const profileItems: ProfileItem[] = [
   { id: 1, name: "داشبورد", path: "/dash" },
   { id: 2, name: "افزودن اعتبار", path: "/add-credit" },
   { id: 3, name: "اطلاعات کاربری", path: "/user-info" },
@@ -26,17 +32,17 @@ const profileItems = [
   { id: 9, name: "خروج", path: "/logOut" },
 ];
 
-const Items = () => {
+const Items: React.FC = () => {
   // const { setNameItem } = useContext(ItemContext);
   // const handleButtonClick = (id, name) => {
   //   setNameItem({ id, name });
   // };
 
   return (
-    <>
+    <div>
       {profileItems.map((item, index) => (
         <div
-          key={index}
+          key={item.id} // استفاده از id به جای index
           className={
             index === profileItems.length - 1
               ? "last-profile-section-item"
@@ -54,7 +60,7 @@ const Items = () => {
           </Link>
         </div>
       ))}
-    </>
+    </div>
   );
 };
 

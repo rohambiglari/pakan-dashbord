@@ -8,7 +8,7 @@
 }
 
 .dashbord-item {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .style-situation {
@@ -24,13 +24,13 @@
 }
 
 .style-situation > div > p {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   color: #ccc;
 }
 
 .style-situation > h5 {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 900;
   color: #f59220;
   margin: 0;
@@ -51,19 +51,19 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 0px 49px;
+  padding: 0px 32px;
   border-bottom: 1px solid #ececec;
 }
 
 .style-request > div > p:last-child {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 500;
   color: #707070;
   line-height: 1.55;
 }
 
 .style-request > div > p:first-child {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 500;
   color: #707070;
   line-height: 1.55;
@@ -71,7 +71,7 @@
 
 .items-request {
   display: flex;
-  padding: 49px;
+  padding: 33px;
   overflow-x: auto;
   width: 100%;
 }
@@ -94,7 +94,7 @@
 }
 
 .process-products-first > p {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 900;
   color: #ccc;
 }
@@ -145,7 +145,7 @@
 }
 
 .process-products-secound > p {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 900;
   color: #ccc;
 }

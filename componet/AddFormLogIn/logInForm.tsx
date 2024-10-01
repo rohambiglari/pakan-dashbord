@@ -2,21 +2,26 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Input from "../input/input";
-import Api from "../../componet/api";
+import Api from "../api";
 // import Cookie from "js-cookie";
 import logInUser from "./serverSidePreventLogIn";
 // import { cookies } from "next/headers";
-import Layout from "../layout/layout";
+import Layout from "../this not for main project just for test/layout";
 import HandleSuccessLogIn from "./handlesuccess/handlesuccess";
-const CheckLogIn = () => {
-  const [formData, setFormData] = useState({
+
+interface FormData {
+  password: string;
+  username: string;
+}
+const CheckLogIn: React.FC = () => {
+  const [formData, setFormData] = useState<FormData>({
     password: "",
     username: "",
   });
 
-  const [state, setState] = useState(null);
+  const [state, setState] = useState<String | null>(null);
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,

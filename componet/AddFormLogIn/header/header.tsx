@@ -1,11 +1,15 @@
 // import React, { useContext, useEffect } from "react";
-import { ItemContext } from "../../usecontext/usecontext"; // وارد کردن ItemContext
+// import { ItemContext } from "../../usecontext/usecontext";
 import Dashbord from "./dashborditem/dashborditem";
 import SideBar from "./sidebar/sidebar";
 import "./header.css";
 import NavarDashbor from "../navbarhandlelogin/navbarhandlelogin";
-const Header = ({ children }) => {
-  // const { nameItem } = useContext(ItemContext); // دریافت nameItem از context
+import React, { ReactNode } from "react";
+interface HeaderProp {
+  children?: React.ReactNode;
+}
+const Header: React.FC<HeaderProp> = ({ children }) => {
+  // const { nameItem } = useContext(ItemContext);
   // console.log(nameItem);
 
   return (

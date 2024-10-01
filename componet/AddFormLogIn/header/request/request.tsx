@@ -1,6 +1,12 @@
 import React from "react";
 
-const Request = ({ statuses, steps, statusesTow }) => {
+interface RequestProps {
+  statuses: string[];
+  steps: number[];
+  statusesTow: string[];
+}
+
+const Request: React.FC<RequestProps> = ({ statuses, steps, statusesTow }) => {
   return (
     <div>
       <div className="process-products-first">
@@ -12,7 +18,7 @@ const Request = ({ statuses, steps, statusesTow }) => {
       <div className="setp-line">
         {steps.map((_, index) => (
           <React.Fragment key={`step-${index}`}>
-            <div className={`steper-circle`}></div>
+            <div className="steper-circle"></div>
             {index < steps.length - 1 && (
               <>
                 <hr />

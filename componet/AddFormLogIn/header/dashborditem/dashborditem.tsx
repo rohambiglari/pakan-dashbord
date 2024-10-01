@@ -1,12 +1,26 @@
 import React from "react";
 import "../dashborditem/dashborditem.css";
-// import Table from "../table/table";
 import TableTwo from "../tabletwo/tabletwo";
 import Request from "../request/request";
 import DashboardItem from "../maindashborrd/maindashbord";
-const dashboardItems = [
+
+interface DashboardItemData {
+  imgSrc: string;
+  imgAlt: string;
+  viewAllText: string;
+  statusHeading: string;
+  requestNumber: string;
+  requestNumberLabel: string;
+  happen: boolean;
+  statuses?: string[];
+  steps?: number[];
+  statusesTow?: string[];
+  table?: string[];
+}
+
+const dashboardItems: DashboardItemData[] = [
   {
-    imgSrc: "./icons8-back-24.png",
+    imgSrc: "/icons8-back-24.png",
     imgAlt: "back-icon",
     viewAllText: "مشاهده همه",
     statusHeading: "وضعیت آخرین درخواست",
@@ -18,7 +32,7 @@ const dashboardItems = [
     statusesTow: ["درحال دریافت", "درحال ارسال"],
   },
   {
-    imgSrc: "./icons8-back-24.png",
+    imgSrc: "/icons8-back-24.png",
     imgAlt: "back-icon",
     viewAllText: "مشاهده همه",
     statusHeading: "گردش حساب",
@@ -29,7 +43,7 @@ const dashboardItems = [
   },
 ];
 
-const Dashbord = () => {
+const Dashbord: React.FC = () => {
   return (
     <>
       <h4 className="h4-header">داشبورد</h4>
@@ -42,9 +56,9 @@ const Dashbord = () => {
             {item.happen ? (
               <div className="items-request">
                 <Request
-                  statuses={item.statuses}
-                  steps={item.steps}
-                  statusesTow={item.statusesTow}
+                  statuses={item.statuses!} // استفاده از '!' برای تضمین وجود داده
+                  steps={item.steps!} // استفاده از '!' برای تضمین وجود داده
+                  statusesTow={item.statusesTow!} // استفاده از '!' برای تضمین وجود داده
                 />
               </div>
             ) : (

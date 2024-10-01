@@ -8,6 +8,11 @@
   position: relative;
 }
 
+.profile-section-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .profile-section-item::after {
   content: "";
   position: absolute;
@@ -41,6 +46,11 @@
   justify-content: flex-end;
   border-top: 1px solid #ececec;
   position: relative;
+}
+
+.last-profile-section-item a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .last-profile-section-item::after {

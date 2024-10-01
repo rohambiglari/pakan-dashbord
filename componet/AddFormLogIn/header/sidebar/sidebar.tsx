@@ -2,10 +2,11 @@
 
 import React, { useEffect, useState } from "react";
 import "../sidebar/sidebar.css";
-import Items from "../../header/sidebar/itemporfielpattern/itemprofielpattern";
-const SideBar = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 1167);
-  const [showSections, setShowSections] = useState(false);
+import Items from "./itemporfielpattern/itemprofielpattern";
+import Image from "next/image";
+const SideBar: React.FC = () => {
+  const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth < 1167);
+  const [showSections, setShowSections] = useState<boolean>(false);
 
   const handleResize = () => {
     setIsMobile(window.innerWidth < 1167);
@@ -49,7 +50,12 @@ const SideBar = () => {
               <p>|</p>
               <p>داشبورد</p>
               <div>
-                <img src="./icons8-back-24.png" />
+                <Image
+                  src="/icons8-back-24.png"
+                  alt="arrow-icon"
+                  width={25}
+                  height={25}
+                />
               </div>
             </div>
           )}
@@ -68,23 +74,30 @@ const SideBar = () => {
                 </div>
               </div>
               <div className="avatar">
-                <img src="./Profile_Placeholder.svg" alt="Avatar" />
+                <Image
+                  src="/Profile_Placeholder.svg"
+                  alt="Avatar"
+                  width={70}
+                  height={70}
+                />
               </div>
             </div>
-            <div className="profile-section">
-              <Items />
+            <div>
+              <div className="wallet-section">
+                <div className="wallet-contaner-item">
+                  <div className="value">0 ریال</div>
+                  <div className="wallet-item">
+                    <div>کیف پول</div>
+                    <div className="wallet-circle"></div>
+                  </div>
+                </div>
+              </div>
+              <div className="profile-section">
+                <Items />
+              </div>
             </div>
           </>
         )}
-        <div className="wallet-section">
-          <div className="wallet-contaner-item">
-            <div className="value">0 ریال</div>
-            <div className="wallet-item">
-              <div>کیف پول</div>
-              <div className="wallet-circle"></div>
-            </div>
-          </div>
-        </div>
       </div>
     </>
   );

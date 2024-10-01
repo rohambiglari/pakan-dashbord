@@ -1,6 +1,20 @@
 import React from "react";
 import "./input.css";
-const Input = ({
+
+interface InputProps {
+  title: string;
+  name: string;
+  type?: string;
+  err?: string;
+  value: string;
+  change: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  placeholder?: string;
+  classLabel?: string;
+  classInput?: string;
+  showErr?: string;
+  onFocus?: () => void;
+}
+const Input: React.FC<InputProps> = ({
   title,
   name,
   type,
@@ -11,9 +25,8 @@ const Input = ({
   classLabel,
   classInput,
   showErr,
-  onFocus
+  onFocus,
 }) => {
-  
   return (
     <div className="style-input">
       <label className={classLabel} htmlFor="add">
