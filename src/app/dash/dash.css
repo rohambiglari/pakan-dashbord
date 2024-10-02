@@ -1,3 +1,7 @@
 .dash {
   background-color: red;
 }
+
+.active-profile-section-item {
+  background-color: greenyellow;
+}

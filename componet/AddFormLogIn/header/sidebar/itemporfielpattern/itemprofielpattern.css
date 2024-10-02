@@ -76,6 +76,11 @@
   background-color: #ec2127;
   border: 0;
 }
+
+.active-profile-section-item {
+  background-color: greenyellow;
+}
+
 .option-item {
   display: flex;
   color: #707070;

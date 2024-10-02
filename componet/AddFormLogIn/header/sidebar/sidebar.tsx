@@ -4,10 +4,13 @@ import React, { useEffect, useState } from "react";
 import "../sidebar/sidebar.css";
 import Items from "./itemporfielpattern/itemprofielpattern";
 import Image from "next/image";
+import Api from "../../../api";
+
 const SideBar: React.FC = () => {
   const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth < 1167);
   const [showSections, setShowSections] = useState<boolean>(false);
-
+  const [balance, setBalance] = useState<number>();
+  const [check, setCheck] = useState<number | null | undefined | never>();
   const handleResize = () => {
     setIsMobile(window.innerWidth < 1167);
     if (window.innerWidth >= 1167) {
@@ -24,6 +27,22 @@ const SideBar: React.FC = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
+  }, []);
+
+  const handleBalance = () => {
+    Api.getBalance()
+      .then((res) => {
+        // alert(res.data);
+        setCheck(res.data?.balance || res.data?.response?.balance);
+        console.log("balance", res.data);
+      })
+      .catch((err) => {
+        console.log("balance", err);
+      });
+  };
+
+  useEffect(() => {
+    handleBalance(); // به‌دست آوردن موجودی به محض بارگذاری کامپوننت
   }, []);
 
   return (
@@ -85,7 +104,7 @@ const SideBar: React.FC = () => {
             <div>
               <div className="wallet-section">
                 <div className="wallet-contaner-item">
-                  <div className="value">0 ریال</div>
+                  <div className="value">{`ریال${check}`}</div>
                   <div className="wallet-item">
                     <div>کیف پول</div>
                     <div className="wallet-circle"></div>
