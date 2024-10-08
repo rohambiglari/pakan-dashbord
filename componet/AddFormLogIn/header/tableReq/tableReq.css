@@ -1,0 +1,130 @@
+.table {
+  border-collapse: collapse;
+  width: 100% !important;
+}
+
+.table td,
+th {
+  border: none;
+
+  padding: 8px;
+}
+
+.tHead {
+  width: 100% !important;
+}
+
+.tHead tr {
+}
+
+.tHead th {
+}
+
+.first-table-td {
+  color: #474545;
+}
+
+.table-th {
+  font-weight: bold !important;
+  color: #707070;
+  font-size: 18px;
+  font-weight: 400;
+  color: #707070;
+  font-family: YekanBakh-Medium;
+}
+
+.tr__div {
+  margin-bottom: 12px;
+}
+
+.table__th--size {
+  margin-bottom: 12px;
+  margin-left: -8px;
+}
+
+.table-td {
+  /* font-family: YekanBakh; */
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.94;
+  color: #707070;
+}
+
+.tr__colorCase-one {
+  background-color: #f5f5f5;
+  /* height: 100px; */
+}
+
+.tr__colorCase-two {
+  /* height: 100px; */
+}
+
+tbody tr td:first-child {
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+.table__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+  padding: 3px 2px;
+  flex: 1 1;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #707070;
+}
+
+.third-table-td {
+  width: 148px;
+}
+
+.status-approved {
+  border: solid 1px #8dc63f;
+  background-color: #e8ffd1;
+  color: #8dc63f;
+  border-radius: 11px;
+  /* padding: 11px 0px; */
+}
+
+.status-canceled {
+  border: solid 1px #ec2127;
+  background-color: #f6ebec;
+  color: #ec2127;
+  border-radius: 11px;
+  /* padding: 11px 0px; */
+}
+
+.status-test {
+  border: solid 1px #00b9ff;
+  background-color: #d1f7ff;
+  color: #00b9ff;
+  border-radius: 11px;
+  /* padding: 11px 0px; */
+}
+
+.first-column {
+  margin: 11px 0px 11px 14px;
+  font-size: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #f59220;
+  border-radius: 30px;
+  color: white;
+}
+
+.second-column {
+  /* padding: 3px 36px !important; */
+}
+
+.td__in {
+  width: 20px;
+  height: 20px;
+  border: 2px solid white !important;
+  border-radius: 12px;
+  background-color: #f59220;
+}

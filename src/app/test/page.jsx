@@ -1,9 +1,10 @@
 import Header from "../../../componet/AddFormLogIn/header/header";
+import Requests from "../../../componet/AddFormLogIn/header/requests/requests"
 const About = () => {
   return (
     <>
       <Header>
-        <h1>درخواست ها</h1>
+        <Requests/>
       </Header>
     </>
   );
