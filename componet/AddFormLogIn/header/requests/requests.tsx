@@ -1,22 +1,8 @@
 import React from "react";
 import "../requests/requests.css";
-import TableReq from "../tableReq/tableReq"
+import TableReq from "../tableReq/tableReq";
+import PartitionReg from "../partitionReg/partitionReg";
 const Requests = () => {
-  const headItems = [
-    "#",
-  
-    "درخواست",
-    "قبض",
-    "تلفن",
-    "اطلاعات تحویل",
-    "وضعیت درخواست",
-    "وضعیت قبض",
-  ];
-  const items = {
-    he :["۱۵.۰۰۰", "۵۴.۰۰۰", "۵۴.۰۰۰", "۵۴.۰۰۰", "۱"],
-    hee :["۲۰.۰۰۰", "۵۴.۰۰۰", "۵۴.۰۰۰", "۵۴.۰۰۰", "۲"],
-    hoo :["۳۵.۰۰۰", "۵۴.۰۰۰","۵۴.۰۰۰", "۵۴.۰۰۰", "۳"],
-  };
   return (
     <div className="requests">
       <div className="requests__titles">
@@ -27,18 +13,12 @@ const Requests = () => {
         </div>
       </div>
       <div className="requests__countianer-items">
-      <TableReq/>
-
-        {/* <div className="requests__items">
-          <div className="requests__items-container">
-            {headItems.map((item, index) => (
-              <h3 key={index}>{item}</h3>
-            ))}
-          </div>
-          <div className="request__table">
-            <TableReq/>
-          </div>
-        </div> */}
+        <div className="tableReq__contianer">
+          <TableReq />
+        </div>
+        <div className="partitionReg__contianer">
+          <PartitionReg />
+        </div>
       </div>
     </div>
   );

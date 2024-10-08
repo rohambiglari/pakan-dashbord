@@ -1,5 +1,13 @@
+.requests__countianer-items {
+  width: 100%;
+  /* padding: 0px 30px; */
+}
+
+.partitionReg__contianer {
+  display: none;
+}
 .requests__titles {
-  padding: 13px 26px 29px 0px;
+  padding: 0px 1px 29px 0px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -9,7 +17,7 @@
 
 .requests__titles > h3 {
   margin-top: 0;
-  font-size: 20px;
+  font-size: 25px;
   color: #6d6e71;
   font-weight: 900;
   font-stretch: normal;
@@ -44,11 +52,6 @@
   width: 29px;
   margin-left: 13px;
   margin-right: 7px;
-}
-
-.requests__countianer-items {
-  width: 100%;
-  padding: 0px 30px;
 }
 
 .requests__items {
@@ -93,4 +96,14 @@
   text-align: right;
   color: #707070;
   font-family: YekanBakh-Medium;
+}
+
+@media (max-width: 773px) {
+  .tableReq__contianer {
+    display: none;
+  }
+
+  .partitionReg__contianer {
+    display: block;
+  }
 }

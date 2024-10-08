@@ -56,16 +56,21 @@ const TableReq = () => {
         <tr>
           {thData.map((value, index) => (
             <th className="table-th" key={index}>
-              <div className={
-                index === 0 ? "table__th--size" :"tr__div"
-              }>{value}</div>
+              <div className={index === 0 ? "table__th--size" : "tr__div"}>
+                {value}
+              </div>
             </th>
           ))}
         </tr>
       </thead>
       <tbody>
         {tDData.map((rowData, rowIndex) => (
-          <tr className={rowIndex % 2 === 0 ? "tr__colorCase-one" : "tr__colorCase-two"} key={rowIndex}>
+          <tr
+            className={
+              rowIndex % 2 === 0 ? "tr__colorCase-one" : "tr__colorCase-two"
+            }
+            key={rowIndex}
+          >
             {rowData.map((cellData, cellIndex) => {
               let divClass = "table__title";
 
