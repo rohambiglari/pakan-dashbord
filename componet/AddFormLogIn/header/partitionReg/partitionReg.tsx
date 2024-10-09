@@ -3,14 +3,14 @@ import "../partitionReg/partitionReg.css";
 const PartitionReg = () => {
   // آرایه برای مقادیر عددی
   const numbersArray = [
-    ["8755", "09123933799", " بازه عصر -۳آبان خیابان سپهبد", "3901"],
-    ["6125", "7541", "3941", "1456"],
-    ["9234", "8562", "3721", "5123"],
-    ["7415", "6231", "1324", "4215"],
+    ["8755", "09123933799", " بازه عصر -۳آبان ", "3901"],
+    ["-", "09128441422", "بازه عصر -۳آبان ", "1456"],
+    ["1244", "09125431217", "بازه عصر -۳آبان ", "4215"],
+    ["6544", "09125431217", "بازه عصر -۳آبان ", "5123"],
   ];
 
   // آرایه برای مقادیر ثابت (برای هر div دوم)
-  const labelArray = ["قبض", "پرداخت", "تسویه", "دریافت"];
+  const labelArray = ["قبض", "تلفن", "اطلاعات تحویل", "وضعیت قبض"];
 
   // آرایه برای متن تستی
   const testTextArray = ["تایید شد", "لغو شد", "متن تستی", "متن تستی"];
@@ -31,7 +31,7 @@ const PartitionReg = () => {
       {numbersArray.map((numbers, index) => (
         <div className="request__partion" key={index}>
           <div className="request__number--style">
-            <div>
+            <div className="request__button">
               <p
                 className={`table__title ${getStatusClass(
                   testTextArray[index]
@@ -41,8 +41,11 @@ const PartitionReg = () => {
               </p>
             </div>
             <div className="request__number">
-              <p className="flex__left">{requestNumbers[index]}</p>
-              <p className="flex__right">شماره درخواست</p>
+              <h5 className="flex__left">{requestNumbers[index]}</h5>
+              <h5 className="flex__righttop--hidden flex__right">
+                شماره درخواست
+              </h5>
+              <h5 className="flex__right--hidden">ش.درخواست</h5>
             </div>
           </div>
           <div className="flex-item">
@@ -57,7 +60,7 @@ const PartitionReg = () => {
             ))}
           </div>
           <div className="requst__details--style">
-            <p className="requst__details">مشاهده جزئیات</p>
+            <p className="requst__details"> مشاهده جزئیات بیشتر</p>
             <div className="requst__details--circle"></div>
           </div>
         </div>

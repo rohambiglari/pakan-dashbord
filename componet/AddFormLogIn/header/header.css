@@ -98,3 +98,9 @@
     padding: 20px;
   }
 }
+
+@media (max-width: 436px) {
+  .header-contaner {
+    padding: 0 !important;
+  }
+}
