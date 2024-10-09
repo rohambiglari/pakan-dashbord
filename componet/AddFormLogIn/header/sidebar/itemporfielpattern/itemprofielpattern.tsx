@@ -28,7 +28,7 @@ const profileItems: ProfileItem[] = [
   { id: 2, name: "افزودن اعتبار", path: "/add-credit" },
   { id: 3, name: "اطلاعات کاربری", path: "/user-info" },
   { id: 5, name: "تغییر رمز عبور", path: "/change-password" },
-  { id: 6, name: "آدرس های من", path: "/my-addresses" },
+  { id: 6, name: "آدرس های من", path: "/address" },
   { id: 7, name: "درخواست ها", path: "/test" },
   { id: 8, name: "گردش حساب", path: "/account-statement" },
   { id: 9, name: "خروج", path: "/logOut" },

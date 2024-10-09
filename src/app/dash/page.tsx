@@ -10,5 +10,3 @@ const Home = () => {
 };
 
 export default Home;
-
-// pages/add-credit.js

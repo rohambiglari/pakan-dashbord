@@ -6,6 +6,7 @@
 .partitionReg__contianer {
   display: none;
 }
+
 .requests__titles {
   padding: 0px 1px 29px 0px;
   width: 100%;
@@ -26,6 +27,7 @@
   font-family: YekanBakh-Regular;
   letter-spacing: 1px;
 }
+
 .requests__category {
   display: flex;
   justify-content: flex-end;
